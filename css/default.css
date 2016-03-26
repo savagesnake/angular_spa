@@ -1,0 +1,73 @@
+
+html,body{
+  font-family:"open sans",helvetica,sans-serif,arial;
+  background-color: #fbfbfb;
+  /*background-color: #f3f3f4;*/
+  color:#676a6c;
+  font-size: 18px;
+
+}
+
+.sidebar-nav{
+  background-color: #2f4050;
+  color:#fff;
+  padding:0px;
+
+}
+.sidebar-nav h1{
+  font-size:1rem;
+  padding:.8em 1em;
+  margin:0px;
+  /*border-bottom: 1px solid #13222F;*/
+  background-color: #203140;
+}
+.nav li{
+  padding:.5em 1em;
+  font-size: .8rem;
+}
+
+.navbar{
+  margin-bottom: 0px;
+}
+
+.page-heading{
+  background-color:#fff;
+  color:#696969;
+  border-bottom: 1px solid #ececec;
+  padding:.65em;
+
+}
+.page-heading h3{
+  margin:0px;
+  padding:.2em 1em;
+  font-size:.9rem;
+}
+
+
+@media (min-width:768px){
+  /*make columns height 100%*/
+html,body,.fix-height{
+  height:100%;
+}
+
+.sidebar-nav{
+  position:fixed;
+  left:0;
+  top:0;
+  z-index: 1000;
+  bottom:0;
+}
+.main-content{
+  position:relative;;
+  padding:4em 1em;
+}
+.page-heading{
+  position:fixed;
+  z-index: 999;
+  top:0;
+  left:0;
+  width:100%;
+}
+
+/*END OF MEDIA QEURY*/
+}
