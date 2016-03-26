@@ -1,0 +1,7 @@
+@mixin theme($class,$backgorund-color,$color){    
+    .#{$class}{
+            color: $color;
+            background:$backgorund-color;
+      
+    }
+}

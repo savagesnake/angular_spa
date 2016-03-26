@@ -1,0 +1,27 @@
+@import "../modules/themes";
+$purple:#634E61;
+$white:#fff;
+$gray:#242424;
+$lightgray:#777777;
+
+//  side bar
+@include theme(side-nav,$purple,$white);
+
+// section title
+@include theme(section-title,$white,$lightgray);
+
+// main content
+@include theme(main-content,$white,$gray);
+
+
+.nav{
+    li{
+        &:hover{
+            background-color:darken($purple,5%);
+        }
+    }
+    .active{
+             background-color:darken($purple,5%);
+        }
+}
+

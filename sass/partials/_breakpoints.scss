@@ -1,0 +1,26 @@
+@media (min-width:1140px){
+  .side-nav{
+    width: 220px;
+    //position:fixed;
+    float:left;
+    height:100%;
+    overflow: hidden;
+    
+}
+.main-content{
+    margin-left:220px;
+    height:100%;
+    
+}
+
+nav {
+    ul{
+        li{
+            width: 100%;
+            text-align:left;
+        }
+    }
+}
+  
+    /** end of media query **/
+}

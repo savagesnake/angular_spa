@@ -1,0 +1,36 @@
+$padding20:20px;
+
+body{
+    color:$textDefault;
+}
+* {
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+nav {
+    ul{
+        margin:0px;
+        list-style: none;
+        padding: 0px;
+        li{
+            padding:10px;
+            text-align:center;
+        }
+    }
+
+}
+
+.main-content{
+    .section-title{
+        padding:$padding20;
+       border-bottom:1px solid #ececec;
+    }
+
+}
+
+.content{
+    padding:$padding20;
+}
