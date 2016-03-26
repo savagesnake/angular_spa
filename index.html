@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="mainApp">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,8 +21,9 @@
   <body>
     <div class="container-fluid fix-height">
    <div class="row fix-height">
-     <aside class="col-sm-2 sidebar-nav fix-height">
+     <aside class="col-sm-2 sidebar-nav fix-height" ng-controller="nav">
          <nav class="navbar" role="navigation">
+           {{message}}
            <h1> Navigation <span class="glyphicon glyphicon-list-alt pull-right"></span></h1>
            <ul class="nav nav-stacked">
              <li role="separator" class="divider"></li>
@@ -51,6 +52,10 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+    <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js" type="text/javascript"></script>
+    <script src="bower_components/angular/angular.min.js" type="text/javascript"></script>
+    <script src="bower_components/angular-route/angular-route.min.js" type="text/javascript"></script>
+    <script src="js/app/events.js" type="text/javascript"></script>
+    <script src="js/app/mainApp.js" type="text/javascript"></script>
   </body>
 </html>
