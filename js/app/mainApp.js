@@ -34,37 +34,7 @@ $stateProvider
 .state('javascript', {
   url: "/javascript",
   templateUrl: "pages/javascript.html"
-})
-
-
-  //  route for the home page
-  //  $routeProvider
-  // .when('/',{
-  //   templateUrl:'/pages/home.html',
-  //   controller:'homeCrt'
-  // })
-  // .when('/createNew',{
-  //   templateUrl:'/pages/createNew.html',
-  //   controller:'createnewCrt'
-  // })
-  // .when('/navigatingv5',{
-  //   templateUrl:'/pages/navigatingv5.html',
-  //   controller:'navigateCrt'
-  // })
-  // .when('/responsive',{
-  //   templateUrl:'/pages/responsive.html',
-  //   controller:'resposiveCrt'
-  // })
-  // .when('/structure',{
-  //   templateUrl:'/pages/structure.html',
-  //   controller:'structureCrt'
-  // })
-  // .otherwise({
-  //   redirecTo:'/'
-  // });
-
-// use the HTML5 history APi
-// $locationProvider.html5Mode(true);
+});
   // end config
 }]);
 

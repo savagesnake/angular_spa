@@ -22,12 +22,19 @@ html,body{
   background-color: #203140;
 }
 .nav li{
-  padding:.5em 1em;
+  /*padding:.5em 1em;*/
   font-size: .8rem;
 }
 
 .navbar{
   margin-bottom: 0px;
+  border: 0px;
+}
+.navbar a{
+  color:#eee;
+}
+.navbar a:hover{
+  color:#2F4050;
 }
 
 .page-heading{
@@ -42,8 +49,34 @@ html,body{
   padding:.2em 1em;
   font-size:.9rem;
 }
+.glyphicon {
+    margin-right:.5em;
+    font-size: .89rem;
+  }
+.nav .glyphicon {
+  background-color:red;
+  padding:1em 2em;
+  border-radius: .2em;
+  background-color: #415467;
+  transition: all 500ms eas-in-out;
+  }
 
+.nav-text {
 
+    display: none;
+}
+
+.navbar li {
+    text-align: center;
+}
+@media (min-width:1218px){
+.nav-text {
+    display: inline;
+}
+.navbar li {
+    text-align: left;
+}
+}
 @media (min-width:768px){
   /*make columns height 100%*/
 html,body,.fix-height{
