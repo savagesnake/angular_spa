@@ -34,7 +34,7 @@ html,body{
   color:#eee;
 }
 .navbar a:hover{
-  color:#2F4050;
+
 }
 
 .page-heading{
@@ -51,31 +51,44 @@ html,body{
 }
 .glyphicon {
     margin-right:.5em;
-    font-size: .89rem;
+    font-size: .9rem;
   }
-.nav .glyphicon {
-  background-color:red;
-  padding:1em 2em;
-  border-radius: .2em;
-  background-color: #415467;
-  transition: all 500ms eas-in-out;
-  }
-
-.nav-text {
-
-    display: none;
-}
-
 .navbar li {
-    text-align: center;
+
 }
+
+.nav-stacked>li+li{
+    margin:0px;
+}
+.nav>li>a:hover, .nav>li>a:focus {
+
+    background-color: #37495A;
+}
+.nav>li>a{
+    padding:0px;
+    border-bottom:.1em solid #263340;
+}
+.nav .glyphicon {
+    display:inline-block;
+    padding: .6em;
+    transition: all 300ms ease-in-out;
+}
+.nav-text {
+  border-left:1px solid #263340;
+    display:inline-block;
+    font-size: .7rem;
+    text-align: center;
+    padding: .93em;
+    /*display: none;*/
+}
+
 @media (min-width:1218px){
 .nav-text {
-    display: inline;
+
+
 }
-.navbar li {
-    text-align: left;
-}
+
+ /*END OF MEDIA QUERY */
 }
 @media (min-width:768px){
   /*make columns height 100%*/
