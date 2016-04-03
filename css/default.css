@@ -84,14 +84,30 @@ html,body{
 
 
 /*box-section*/
-.box-header h2{
+.box{
+  margin-bottom:20px;
+}
+.box-header {
+  color:#999;
   font-size:.8em;
   background-color: #F7F7F8;
   font-weight: normal;
-  padding:.8em;
   margin:0px;
   border:1px solid #dbdee0;
 }
+.box-header .glyphicon{
+  margin:0em .5em;
+}
+.box-header h2{
+  display: inline-block;
+  border-left:1px solid #dbdee0;
+  padding:.8em;
+  font-size:1em;
+  font-weight: normal;
+  margin:0px;
+}
+
+
 .box-content{
   background-color:#fff;
   padding:1em;
@@ -100,6 +116,10 @@ html,body{
 }
 .box-content .page-header h1{
   font-weight: normal;
+}
+
+aside .box-content{
+  font-size:.8rem
 }
 
 @media (min-width:1218px){
