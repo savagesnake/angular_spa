@@ -6,11 +6,12 @@ var myApp = angular.module('mainApp',['ui.router']);
 
 myApp.config(['$stateProvider','$urlRouterProvider', function($stateProvider,$urlRouterProvider){
 
-$urlRouterProvider.otherwise('/home');
+$urlRouterProvider.otherwise('/');
+
 
 $stateProvider
 .state('home',{
-  url:'/home',
+  url:'/',
   templateUrl:'/pages/home.html',
   controller:'homeCtr'
 })
@@ -38,12 +39,15 @@ $stateProvider
   templateUrl: "pages/javascript.html",
   controller:'javascriptCtr'
 });
+
+
   // end config
 }]);
 
  myApp.controller('homeCtr', function($scope){
-   $scope.heading = "V5 Guide";
-   $scope.pageHeading = 'Welcome to v5 guide';
+   $scope.heading = "V5 Guide Contents";
+   $scope.pageDescription = "Welcome to v5 guide"
+   $scope.pageHeading = 'Contents';
  });
  myApp.controller('createnewCtr', function($scope){
    $scope.heading = "Create a new website";
