@@ -2,7 +2,6 @@
 html,body{
   font-family:"open sans",helvetica,sans-serif,arial;
   background-color: #F3F3F3;
-  /*background-color: #f3f3f4;*/
   color:#676a6c;
   font-size: 18px;
 
@@ -18,11 +17,10 @@ html,body{
   font-size:1rem;
   padding:.8em 1em;
   margin:0px;
-  /*border-bottom: 1px solid #13222F;*/
   background-color: #203140;
 }
 .nav li{
-  /*padding:.5em 1em;*/
+
   font-size: .8rem;
 }
 
@@ -36,53 +34,65 @@ html,body{
 .navbar a:hover{
 
 }
+.glyphicon {
+  margin-right:.5em;
+  font-size: .9rem;
+}
+.nav .glyphicon {
+  display:inline-block;
+  padding: .6em;
+  transition: all 300ms ease-in-out;
+}
+.nav-text {
+  border-left:1px solid #263340;
+  display:inline-block;
+  font-size: .7rem;
+  text-align: center;
+  padding: .93em;
+  /*display: none;*/
+}
 
 .page-heading{
   background-color:#fff;
   color:#696969;
   border-bottom: 1px solid #ececec;
   padding:.65em;
-
 }
 .page-heading h3{
   margin:0px;
   padding:.2em 1em;
   font-size:.9rem;
 }
-.glyphicon {
-    margin-right:.5em;
-    font-size: .9rem;
-  }
-.navbar li {
-
-}
 
 .nav-stacked>li+li{
     margin:0px;
 }
-.nav>li>a:hover, .nav>li>a:focus {
-
+.nav > li > a:hover, .nav > li > a:focus {
     background-color: #37495A;
 }
-.nav>li>a{
+.nav > li > a{
     padding:0px;
     border-bottom:.1em solid #263340;
 }
-.nav .glyphicon {
-    display:inline-block;
-    padding: .6em;
-    transition: all 300ms ease-in-out;
+
+.contents,.contents > li ul{
+  list-style: none;
+  margin: 0px;
+  padding:0px;
 }
-.nav-text {
-  border-left:1px solid #263340;
-    display:inline-block;
-    font-size: .7rem;
-    text-align: center;
-    padding: .93em;
-    /*display: none;*/
+.contents > li,.contents > li ul li{
+  font-size:.9em;
+  padding-top:.6em;
+  padding-bottom:.2em;
+  border-bottom:1px dotted #ccc;
+}
+.contents > li:last-of-type,.contents > li ul li:last-of-type{
+  border:0px;
 }
 
-
+.contents > li ul{
+  padding-left:1em;
+}
 /*box-section*/
 .box{
   margin-bottom:20px;
